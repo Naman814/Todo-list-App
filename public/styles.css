@@ -1,0 +1,109 @@
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.App{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+    background-color: #184D47;
+
+}
+
+
+h1{
+    color:#184D47;
+    font-size: 4rem;
+}
+
+span{
+    font-size: 2.5rem;
+    color:#184D47;
+    margin: 1.5rem;
+    text-align: center;
+    height:auto;
+    width: 30rem;
+    background-color:#FFC074;  
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+  
+}
+
+h5{
+    font-size: 2rem;
+}
+
+
+.list-body{
+ 
+    height: 60vh;
+    width:40rem;
+    background-color: #96BB7C;
+    text-align: center;
+    padding: 1rem;
+    border:solid black;
+    overflow: auto;
+}
+
+li{
+    font-size: 2rem;
+}
+
+input{
+    height:3rem;
+    width:20rem;
+    background-color: #B3E283;
+    font-size: 2rem;
+    vertical-align: bottom;
+   
+}
+
+button{
+    height:3.4rem;
+    width:4rem;
+    background-color: #DDFFBC;
+
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+   justify-content: space-between;
+}
+
+
+@media (max-width:950px){
+    input{
+        height:3rem;
+        width:16rem;
+    }
+    .list-body{
+        width:65vw;
+    }
+    button{
+        height:3.4rem;
+        width: 4rem;
+    }
+    p{
+        height:auto;
+        width:12rem;
+    }
+}
