@@ -27,6 +27,7 @@ html{
 h1{
     color:#184D47;
     font-size: 4rem;
+    margin: 2rem;
 }
 
 span{
@@ -102,8 +103,11 @@ button{
         height:3.4rem;
         width: 4rem;
     }
-    p{
+    span{
         height:auto;
-        width:12rem;
+        width:20rem;
+    }
+    h5{
+        font-size: 1.5rem;
     }
 }

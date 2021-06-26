@@ -12,8 +12,11 @@ function handleClick(){
   } 
 }
 
-const handleDelete=(e)=>{
-  console.log(e)
+const handleDelete=(key)=>{
+  const updatedNote=note.filter((item,idx)=>{
+      return key!==idx
+  })
+  addNote(updatedNote);
 }
     return(
     <div className="outer">
@@ -21,7 +24,7 @@ const handleDelete=(e)=>{
     <button onClick={handleClick}><b><FaPlus /></b></button>
     <div className="content">
      {note.map((note,idx)=>{
-       return <span key={idx}> <h5>{note} </h5>  <FaTrash onClick={handleDelete} /></span>
+       return <span key={idx}> <h5>{note} </h5>  <FaTrash onClick={()=>handleDelete(idx)} /></span>
      })}
     </div>
     </div>
